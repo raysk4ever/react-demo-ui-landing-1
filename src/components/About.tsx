@@ -20,7 +20,7 @@ const About = () => {
           {sections.map((section, index) => (
             <a
               key={`${section.name}-${index}`}
-              href={section.href}
+              // href={section.href}
               className="hover:text-primary text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white"
             >
               {section.name}
@@ -30,7 +30,7 @@ const About = () => {
         <div className="flex items-center gap-x-8 mt-6 h-8">
           <a
             aria-label="github"
-            href={socialMedia.github}
+            // href={socialMedia.github}
             target="_blank"
             rel="noreferrer"
           >
@@ -46,7 +46,7 @@ const About = () => {
           </a>
           <a
             aria-label="linkedin"
-            href={socialMedia.linkedin}
+            // href={socialMedia.linkedin}
             target="_blank"
             rel="noreferrer"
           >
@@ -62,7 +62,7 @@ const About = () => {
           </a>
           <a
             aria-label="twitter"
-            href={socialMedia.twitter}
+            // href={socialMedia.twitter}
             target="_blank"
             rel="noreferrer"
           >
@@ -79,10 +79,7 @@ const About = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            &copy; {new Date().getFullYear()} designed by{' '}
-            <a href="https://github.com/issaafalkattan" rel="nofollow">
-              Issaaf Kattan
-            </a>
+            &copy; {new Date().getFullYear()}
           </p>
         </div>
       </div>
